@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number and if else</title>
+</head>
+
+<body>
+    <h1>Number methods and if else</h1>
+
+    <input type="text" name="num" id="num" />
+
+    <button onclick="demo()">Demo</button>
+    <script>
+        let num1 = 123.5677887;
+        function demo() {
+            let formvalue = document.getElementById("num").value;
+            console.log(typeof formvalue);
+
+
+            // convert the string into number 
+            let converted = parseInt(formvalue);
+            console.log(typeof converted);
+
+
+            // control the number of digit after decimal 
+            let fixed = num1.toFixed(2);
+            console.log(fixed)
+
+            // control the number oftotal digits
+            let precised = num1.toPrecision(6);
+            console.log(precised);
+
+            // conditional statement
+            if (converted > 3) {
+                console.log("number is valid")
+            }
+            else {
+                console.log("number invalid")
+            }
+
+            switch (new Date().getMinutes()) {
+                case 9: {
+                    console.log("minute is nine")
+                }
+                    break;
+                case 10: {
+                    console.log("minute is 10")
+                }
+                    break;
+                case 11: {
+                    console.log("minute is 11")
+                }
+                    break;
+                default: {
+                    console.log("minute is invalid")
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
